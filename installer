@@ -8,8 +8,8 @@ echo "$file created"
 touch ~/.bash_profile
 fi
 
-if ! grep -i "$cwd/script" $file &>/dev/null; then
-echo 'export PATH=$PATH"'":$(pwd)/script"'"' >> $file
+if ! grep -i "$cwd/scripts" $file &>/dev/null; then
+echo 'export PATH=$PATH"'":$(pwd)/scripts"'"' >> $file
 fi
 
 if ! grep -i 'export GITHUB_API_TOKEN=' $file &>/dev/null; then
