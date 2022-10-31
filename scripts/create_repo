@@ -1,0 +1,44 @@
+#!/usr/bin/env python
+
+import argparse
+import os
+import requests
+import json
+
+URL = "https://api.github.com/user/repos"
+API_KEY = os.getenv('GITHUB_API_TOKEN')
+
+parser = argparse.ArgumentParser(description='creates a local repository linked with a remote repository')
+
+parser.add_argument('path', metavar='PATH', type=str, help='Enter the path for the new repository')
+parser.add_argument('name', metavar='NAME', type=str, help='Enter a name for the new repository')
+args = parser.parse_args()
+
+name = args.name
+path = args.path
+
+os.chdir(path)
+os.mkdir(name)
+os.chdir(name)
+os.system('git init -b main')
+os.system('touch README.md')
+os.system('git add . && git commit -m "initial commit"')
+# os.system('git status')
+
+
+payload = json.dumps({
+  "name": name,
+  "description": "made with the GitHub API and bash"
+})
+headers = {
+  'Authorization': f'Bearer {API_KEY}',
+  'Content-Type': 'application/json'
+}
+print(headers['Authorization'])
+response = requests.request("POST", URL, headers=headers, data=payload)
+
+remote_url = response.json()['svn_url']
+
+os.system(f'git remote add origin {remote_url}')
+os.system('git push origin main')
+print(f"\nREMOTE URL FOR \"{name}\" is: {remote_url}")
