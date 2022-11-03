@@ -2,7 +2,7 @@
 
 import argparse
 import os
-import requests
+import http.client
 import json
 
 URL = "https://api.github.com/user/repos"
@@ -25,20 +25,26 @@ os.system('touch README.md')
 os.system('git add . && git commit -m "initial commit"')
 # os.system('git status')
 
-
+conn = http.client.HTTPSConnection("api.github.com")
 payload = json.dumps({
   "name": name,
-  "description": "made with the GitHub API and bash"
+  "description": "made with the GitHub API"
 })
 headers = {
   'Authorization': f'Bearer {API_KEY}',
-  'Content-Type': 'application/json'
+  'Content-Type': 'application/json',
+  'User-Agent': 'sahil-sagwekar2652'
 }
-print(headers['Authorization'])
-response = requests.request("POST", URL, headers=headers, data=payload)
 
-remote_url = response.json()['svn_url']
+conn.request("POST", "/user/repos", payload, headers)
+res = conn.getresponse()
+data = res.read().decode("utf-8")
+response = json.loads(data)
+
+
+remote_url = response['svn_url']
 
 os.system(f'git remote add origin {remote_url}')
 os.system('git push origin main')
 print(f"\nREMOTE URL FOR \"{name}\" is: {remote_url}")
+

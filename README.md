@@ -18,10 +18,11 @@ Install the python dependencies by running the following commands in the project
 pip install -r requirements. txt
 ```
 
-Now run this command to configure the script.
+Now run these commands to configure the script.
 
 ```sh
-source installer <GITHUB_ACCESS_TOKEN>
+./installer <GITHUB_ACCESS_TOKEN>
+source ~/.bash_profile
 ```
 
 ## How to use
@@ -38,7 +39,7 @@ create_repo <PATH_NAME> <REPO_NAME>
 - <PATH_NAME> is the path where you want to create the local repository and <REPO_NAME> is the name for your repo
 - Example:
 ```sh
-create_repo $(pwd) test-repo
+create_repo . test-repo
 ```
 The result is a local respository is created with a connected remote repository automatically!
 
