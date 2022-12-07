@@ -7,18 +7,13 @@ This repository hosts scripts written in bash script and python to automate comm
 
 ## Installation
 ##### Requirements:
-- This script requires these python packages [requirements.txt](requirements.txt)
 - [**Git Bash**](https://git-scm.com/downloads) installed on your computer.
 - **GitHub personal access token**. (Go to your GitHub profile -> Settings -> Developer settings -> Personal Access Tokens -> Create new token with all the repo permissions)
 
-Install the python dependencies by running the following commands in the project directory.
-
-
-```sh
-pip install -r requirements. txt
-```
 
 Now run these commands to configure the script.
+
+###### Note!!! This script will modify your bash_profile, please go through the script to see what it does.
 
 ```sh
 ./installer <GITHUB_ACCESS_TOKEN>
