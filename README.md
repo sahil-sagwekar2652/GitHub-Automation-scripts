@@ -7,18 +7,18 @@ This repository hosts scripts written in bash script and python to automate comm
 
 ## Installation
 ##### Requirements:
-- [**Git Bash**](https://git-scm.com/downloads) installed on your computer.
+- [Git Bash](https://git-scm.com/downloads) installed on your computer.
 - **GitHub personal access token**. (Go to your GitHub profile -> Settings -> Developer settings -> Personal Access Tokens -> Create new token with all the repo permissions)
+- You will need to set an environment variable 'GITHUB_API_TOKEN' for Git Bash.
 
+###### Note!!! This script is written exclusively for Git Bash on Windows, you will have to modify it for other shells.
 
-Now run these commands to configure the script.
-
-###### Note!!! This script will modify your bash_profile, please go through the script to see what it does.
-
+##### Run the following commands in the project folder to add the scripts to your bin directory
 ```sh
-./installer <GITHUB_ACCESS_TOKEN>
-source ~/.bash_profile
+$ cp -r /scripts/* /usr/bin/
+$ export GITHUB_API_TOKEN=your_github_personal_access_token
 ```
+- Add the "export GITHUB_API_TOKEN=your_github_personal_access_token" to your ~/.bash_profile to permanently set the environment variable
 
 ## How to use
 After the installation is complete then the 'create_repo' command should execute in any directory.

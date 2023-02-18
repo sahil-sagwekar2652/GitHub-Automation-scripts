@@ -6,7 +6,12 @@ import http.client
 import json
 
 URL = "https://api.github.com/user/repos"
+# Set your GitHub API Token as an environment variable to run this script
 API_KEY = os.getenv('GITHUB_API_TOKEN')
+
+if API_KEY is None:
+  print("Please set environment variable 'GITHUB_API_TOKEN'")
+  exit()
 
 parser = argparse.ArgumentParser(description='creates a local repository linked with a remote repository')
 
@@ -41,7 +46,7 @@ res = conn.getresponse()
 data = res.read().decode("utf-8")
 response = json.loads(data)
 
-
+print(response)
 remote_url = response['svn_url']
 
 os.system(f'git remote add origin {remote_url}')
