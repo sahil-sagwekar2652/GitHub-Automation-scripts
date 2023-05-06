@@ -10,13 +10,13 @@ URL = "https://api.github.com/user/repos"
 API_KEY = os.getenv('GITHUB_API_TOKEN')
 
 if API_KEY is None:
-  print("Please set environment variable 'GITHUB_API_TOKEN'")
-  exit()
+    print("Please set environment variable 'GITHUB_API_TOKEN'")
+    exit()
 
-parser = argparse.ArgumentParser(description='creates a local repository linked with a remote repository')
+parser = argparse.ArgumentParser(description='creates a local repository linked with a remote repository')  # noqa: E501
 
-parser.add_argument('path', metavar='PATH', type=str, help='Enter the path for the new repository')
-parser.add_argument('name', metavar='NAME', type=str, help='Enter a name for the new repository')
+parser.add_argument('path', metavar='PATH', type=str, help='Enter the path for the new repository')  # noqa: E501
+parser.add_argument('name', metavar='NAME', type=str, help='Enter a name for the new repository')  # noqa: E501
 args = parser.parse_args()
 
 name = args.name
@@ -52,4 +52,3 @@ remote_url = response['svn_url']
 os.system(f'git remote add origin {remote_url}')
 os.system('git push origin main')
 print(f"\nREMOTE URL FOR \"{name}\" is: {remote_url}")
-
