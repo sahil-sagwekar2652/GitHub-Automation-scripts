@@ -1,3 +1,6 @@
+# Stores the API key
+scripts/github_secrets.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
