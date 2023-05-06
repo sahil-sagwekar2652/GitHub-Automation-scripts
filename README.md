@@ -42,8 +42,10 @@ create_repo . test-repo
 The result is a local respository is created with a connected remote repository automatically!
 
 
-## Development
-Want to contribute? Great!
+## 👨‍💻 Development
+Checkout the issues tab to find ideas!
+
+Want to contribute? Great!  
 Make sure to go through the [Contributor's Guide](CONTRIBUTING.md).
 
 
