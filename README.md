@@ -12,17 +12,46 @@ This repository hosts scripts written in bash script and python to automate comm
 ## Installation
 ##### Requirements:
 - [Git Bash](https://git-scm.com/downloads) installed on your computer.
-- **GitHub personal access token**. (Go to your GitHub profile -> Settings -> Developer settings -> Personal Access Tokens -> Create new token with all the repo permissions)
-- You will need to set an environment variable 'GITHUB_API_TOKEN' for Git Bash.
+- **GitHub personal access token**. (Go to your GitHub profile -> Settings -> Developer settings -> Personal Access Tokens -> Create new token with all the repository permissions)
 
-###### Note!!! This script is written exclusively for Git Bash on Windows, you will have to modify it for other shells.
 
-##### Run the following commands in the project folder to add the scripts to your bin directory
+#### ```Note!!! This script is written exclusively for Git Bash on Windows, you will have to modify it for other shells.```
+
+### Step 1:
+Fork and clone the repository locally.
+
+### Step 2:
+Create a ```github_secrets.py``` file in the ./scripts folder and define the following variables inside it.
+
+```py
+GITHUB_API_TOKEN = "Your GitHub personal access token"
+USERNAME = "Your GitHub username"
+```
+
+### Step 3:
+
+#### Add the project path to the PATH variable (Recommended)
+
+Run the following command in the project's base directory to add the scripts path to the PATH environment variable.
+
+```sh
+$ export PATH=$PATH":"$(pwd)"/scripts"
+```
+
+To permanently add the scripts path to the PATH variable, run the below command in the project's root directory. (This file is located in your home directory)  
+
+**Make sure to backup the .bash_profile file elsewhere before making any changes to it.**
+
+```sh
+$ echo 'export PATH=$PATH''":'"$(pwd)"'/scripts''"' >> ~/.bash_profile
+```
+
+<p style="text-align:center;font-size:1.75rem">OR</p>
+
+#### Run the following commands in the project folder to add the scripts to your bin directory
 ```sh
 $ cp -r /scripts/* /usr/bin/
-$ export GITHUB_API_TOKEN=your_github_personal_access_token
 ```
-- Add the "export GITHUB_API_TOKEN=your_github_personal_access_token" to your ~/.bash_profile to permanently set the environment variable
 
 ## How to use
 After the installation is complete then the 'create_repo' command should execute in any directory.
@@ -44,11 +73,15 @@ The result is a local respository is created with a connected remote repository 
 
 
 ## 👨‍💻 Development
-Checkout the issues tab to find ideas!
 
-Want to contribute? Great!  
-Make sure to go through the [Contributor's Guide](CONTRIBUTING.md).
+- Join the project workspace on [](https://join.slack.com/t/githubautomat-9t49360/shared_invite/zt-1v05p5kao-UBmelVfZd6EBjGuzd_6XYg)
 
+- Checkout the issues tab to find ideas!
+
+- Want to contribute? Great!  
+Make sure to go through the [Contributor's Guide](CONTRIBUTING.md). Trust me it wont take long ;)
+
+- ### **Make sure to push your code to the ```contributing``` branch.**
 
 ## License
 

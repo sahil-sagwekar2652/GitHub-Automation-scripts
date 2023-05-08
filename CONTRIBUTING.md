@@ -33,6 +33,8 @@ If you then still feel the need to ask a question and need clarification, we rec
 - Fork the project on GitHub, clone it on your PC.
 - If you have an idea for an enhancement or a bug you can first check the [Issues](https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts.git/issues) to see if your question has been asked before.
 - If you'd like to work on an issue, please ask the creator of the issue to assign it to you. This helps to keep the workflow streamlined.
+- **Make sure to push your code to the ```contributing``` branch.**
+- Make sure to make the appropriate changes in the README.md file if you are adding a new script or feature.
 
 
 ## Styleguides
