@@ -4,7 +4,10 @@ import argparse
 import os
 import http.client
 import json
-from github_secrets import GITHUB_API_TOKEN
+from github_secrets import GITHUB_API_TOKEN, USERNAME
+
+if not GITHUB_API_TOKEN:
+    raise ValueError("Please set the environment variable GITHUB_API_TOKEN in the github_secrets.py file")  # noqa: E501
 
 URL = "https://api.github.com/user/repos"
 
@@ -13,11 +16,11 @@ parser = argparse.ArgumentParser(description='creates a local repository linked 
 parser.add_argument('path',
                     metavar='PATH',
                     type=str,
-                    help='Enter the path for the new repository')  # noqa: E501
+                    help='Enter the path for the new repository')
 parser.add_argument('name',
                     metavar='NAME',
                     type=str,
-                    help='Enter a name for the new repository')  # noqa: E501
+                    help='Enter a name for the new repository')
 args = parser.parse_args()
 
 name = args.name
@@ -39,7 +42,7 @@ payload = json.dumps({
 headers = {
   'Authorization': f'Bearer {GITHUB_API_TOKEN}',
   'Content-Type': 'application/json',
-  'User-Agent': 'sahil-sagwekar2652'
+  'User-Agent': f'{USERNAME}'
 }
 
 conn.request("POST", "/user/repos", payload, headers)
