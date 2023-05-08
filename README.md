@@ -17,10 +17,10 @@ This repository hosts scripts written in bash script and python to automate comm
 
 #### ```Note!!! This script is written exclusively for Git Bash on Windows, you will have to modify it for other shells.```
 
-### Step 1:
+- ### Step 1:
 Fork and clone the repository locally.
 
-### Step 2:
+- ### Step 2:
 Create a ```github_secrets.py``` file in the ./scripts folder and define the following variables inside it.
 
 ```py
@@ -28,7 +28,7 @@ GITHUB_API_TOKEN = "Your GitHub personal access token"
 USERNAME = "Your GitHub username"
 ```
 
-### Step 3:
+- ### Step 3:
 
 #### Add the project path to the PATH variable (Recommended)
 
@@ -74,7 +74,7 @@ The result is a local respository is created with a connected remote repository 
 
 ## 👨‍💻 Development
 
-- Join the project workspace on [](https://join.slack.com/t/githubautomat-9t49360/shared_invite/zt-1v05p5kao-UBmelVfZd6EBjGuzd_6XYg)
+- Join the project workspace on  <a href="https://join.slack.com/t/githubautomat-9t49360/shared_invite/zt-1v05p5kao-UBmelVfZd6EBjGuzd_6XYg"><img src="https://user-images.githubusercontent.com/89456541/236819046-da2f49a9-4d43-47c0-b9c2-3fdb55f3d87e.png" width="3%"></a>
 
 - Checkout the issues tab to find ideas!
 
