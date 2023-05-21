@@ -27,6 +27,7 @@ If you don't have these tools installed, you can install them using the package 
 2. Run the following command to execute the script:
   ```bash
  ./create_repo.sh
+  ```
 
 3. The script will prompt you to enter the repository details:
 
