@@ -1,0 +1,2 @@
+GITHUB_API_TOKEN = "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"
+USERNAME = "saddarudin"
