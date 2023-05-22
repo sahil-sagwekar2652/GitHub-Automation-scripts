@@ -91,14 +91,17 @@ The result is a local respository is created with a connected remote repository 
 
 ## 👨‍💻 Development
 
-- Join the project workspace on  <a href="https://join.slack.com/t/githubautomat-9t49360/shared_invite/zt-1v05p5kao-UBmelVfZd6EBjGuzd_6XYg"><img src="https://user-images.githubusercontent.com/89456541/236819046-da2f49a9-4d43-47c0-b9c2-3fdb55f3d87e.png" width="3%"></a>
+- Steps to join the project channel on  <a href="https://discord.com/channels/1099745007172329592/1099745007675646042"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b5061df29d55a92d945_full_logo_blurple_RGB.svg" width="10%"></a>
 
+    - Go to the [#self-roles](https://discord.com/channels/1099745007172329592/1099745007675646042) channel and choose the 'contributor' and 'GitHub-Automation-scripts' roles.
+    - You will be automatically added to the exclusive project channel.
+    - It will be the primary channel for all the discussions related to the project.  
+  
 - Checkout the issues tab to find ideas!
 
 - Want to contribute? Great!  
 Make sure to go through the [Contributor's Guide](CONTRIBUTING.md). Trust me it wont take long ;)
 
-- ### **Make sure to push your code to the ```contributing``` branch.**
 
 ## License
 
