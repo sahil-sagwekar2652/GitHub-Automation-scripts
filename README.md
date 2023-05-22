@@ -5,7 +5,15 @@ This repository hosts scripts written in bash script and python to automate comm
 
 [![GitHub-Automation-scripts](https://github-readme-stats.vercel.app/api/pin/?username=sahil-sagwekar2652&repo=GitHub-Automation-scripts&theme=dark)](https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts)<br/>
 
+## Table of Content
 
+- [Tech](#tech)
+- [Installation](#installation)
+- [How to use](#how-to-use)
+- [Development](#develop)
+- [License](#license)
+
+<a name="tech"></a>
 ## Tech 🖥️
 [![My Skills](https://skillicons.dev/icons?i=py,bash,git,github&perline=4)](https://skillicons.dev)
 
@@ -71,7 +79,7 @@ create_repo . test-repo
 ```
 The result is a local respository is created with a connected remote repository automatically!
 
-
+<a name="develop"></a>
 ## 👨‍💻 Development
 
 - Join the project workspace on  <a href="https://join.slack.com/t/githubautomat-9t49360/shared_invite/zt-1v05p5kao-UBmelVfZd6EBjGuzd_6XYg"><img src="https://user-images.githubusercontent.com/89456541/236819046-da2f49a9-4d43-47c0-b9c2-3fdb55f3d87e.png" width="3%"></a>
