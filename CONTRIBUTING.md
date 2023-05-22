@@ -18,7 +18,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 
 ## Asking Questions
 
-If you want to ask a question, join the 'contributing' slack channel of the Project. Click [here](https://join.slack.com/t/githubautomat-9t49360/shared_invite/zt-1v05p5kao-UBmelVfZd6EBjGuzd_6XYg) to join the workspace on Slack.
+If you want to ask a question, join the 'GitHub Automation scripts' project channel on the GSSoC discord server. To join the project channel, make sure you have the 'GitHub Automation scripts' & 'Contributor' role assigned to you. If you don't have the role assigned to you, you can self-assign it in the [#self-roles](https://discord.com/channels/1099745007172329592/1099745007675646046) channel.
 
 Before you ask a question, it is best to search for existing [Issues](https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts.git/issues) that might help you. It is also advisable to search the internet for answers first.
 
@@ -33,7 +33,8 @@ If you then still feel the need to ask a question and need clarification, we rec
 - Fork the project on GitHub, clone it on your PC.
 - If you have an idea for an enhancement or a bug you can first check the [Issues](https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts.git/issues) to see if your question has been asked before.
 - If you'd like to work on an issue, please ask the creator of the issue to assign it to you. This helps to keep the workflow streamlined.
-- **Make sure to push your code to the ```contributing``` branch.**
+- Create a new branch for your contribution and make the changes you want to make. (Always check for updates on the main branch before creating a pull request to avoid merge conflicts.)
+- The pull request should mention the issue it is trying to solve and should be linked to it. Here is a video on how to link PRs to issues - [video link](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
 - Make sure to make the appropriate changes in the README.md file if you are adding a new script or feature.
 
 
