@@ -5,6 +5,23 @@ This repository hosts scripts written in bash script and python to automate comm
 
 [![GitHub-Automation-scripts](https://github-readme-stats.vercel.app/api/pin/?username=sahil-sagwekar2652&repo=GitHub-Automation-scripts&theme=dark)](https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts)<br/>
 
+## Status
+<div align="center">
+<img src="https://forthebadge.com/images/badges/built-with-love.svg" />
+<img src="https://forthebadge.com/images/badges/uses-brains.svg" />
+<img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
+ <br>
+  <img src="https://img.shields.io/github/repo-size/sahil-sagwekar2652/GitHub-Automation-scripts?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues/sahil-sagwekar2652/Github-Automation-scripts?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-closed-raw/sahil-sagwekar2652/Github-Automation-scripts?style=for-the-badge" />
+  
+  <img src="https://img.shields.io/github/forks/sahil-sagwekar2652/GitHub-Automation-scripts?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-pr/sahil-sagwekar2652/GitHub-Automation-scripts?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-pr-closed-raw/sahil-sagwekar2652/GitHub-Automation-scripts?style=for-the-badge" />
+  <img src="https://img.shields.io/github/stars/sahil-sagwekar2652/GitHub-Automation-scripts?style=for-the-badge" />
+  <img src="https://img.shields.io/github/contributors/sahil-sagwekar2652/GitHUb-Automation-scripts?style=for-the-badge" />
+  </div>
+<br>
 
 ## Tech 🖥️
 [![My Skills](https://skillicons.dev/icons?i=py,bash,git,github&perline=4)](https://skillicons.dev)
@@ -86,3 +103,4 @@ Make sure to go through the [Contributor's Guide](CONTRIBUTING.md). Trust me it 
 ## License
 
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](LICENSE)
+
