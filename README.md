@@ -52,7 +52,43 @@ $ echo 'export PATH=$PATH''":'"$(pwd)"'/scripts''"' >> ~/.bash_profile
 ```sh
 $ cp -r /scripts/* /usr/bin/
 ```
+## Python download
+To download Python 
+<a href="https://www.python.org/ftp/python/3.11.3/python-3.11.3-amd64.exe"></a>
 
+## The modules:
+Mainly there are some specific modules which are highly essential for this automation-script:
+Those are:
+- ### argparse
+- ### os
+- ### http
+- ### client
+- ### json
+- ### github_secrets
+## Downloading the module
+#### Run the following commands in shell to download the modules
+```sh
+$ pip install argparse
+```
+```sh
+$ pip install os
+```
+```sh
+$ pip install http
+```
+```sh
+$ pip install client
+```
+```sh
+$ pip install json
+```
+```sh
+$ pip install github_secrets
+```
+If the shell showing to update pip use the command
+```sh
+$ pip install --upgrade pip
+```
 ## How to use
 After the installation is complete then the 'create_repo' command should execute in any directory.
 
