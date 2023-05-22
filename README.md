@@ -73,6 +73,7 @@ $ cp -r /scripts/* /usr/bin/
 To download Python 
 <a href="https://www.python.org/ftp/python/3.11.3/python-3.11.3-amd64.exe"></a>
 
+all necessary things are here:
 ## The modules:
 Mainly there are some specific modules which are highly essential for this automation-script:
 Those are:
