@@ -26,7 +26,7 @@ This repository hosts scripts written in bash script and python to automate comm
 ## Tech 🖥️
 [![My Skills](https://skillicons.dev/icons?i=py,bash,git,github&perline=4)](https://skillicons.dev)
 
-## Installation
+## 🏗️ Installation
 ##### Requirements:
 - [Git Bash](https://git-scm.com/downloads) installed on your computer.
 - **GitHub personal access token**. (Go to your GitHub profile -> Settings -> Developer settings -> Personal Access Tokens -> Create new token with all the repository permissions)
@@ -100,10 +100,14 @@ The result is a local respository is created with a connected remote repository 
 - Checkout the issues tab to find ideas!
 
 - Want to contribute? Great!  
-Make sure to go through the [Contributor's Guide](CONTRIBUTING.md). Trust me it wont take long ;)
+Make sure to go through the [Contributor's Guide](CONTRIBUTING.md). Trust me it wont take long ;). 
 
 
-## License
+## 🪪 Licence
 
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](LICENSE)
+
+This project is licensed under the MIT license. For more information, please refer to the LICENSE file.
+
+We hope you find these automation scripts helpful in streamlining your Git and GitHub workflows
 
