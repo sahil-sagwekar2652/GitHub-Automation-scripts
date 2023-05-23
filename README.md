@@ -121,3 +121,10 @@ Make sure to go through the [Contributor's Guide](CONTRIBUTING.md). Trust me it 
 
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](LICENSE)
 
+
+## Contributors
+
+<p align="center"
+   <a href="https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=sahil-sagwekar2652/GitHub-Automation-scripts" />
+</a></p>
