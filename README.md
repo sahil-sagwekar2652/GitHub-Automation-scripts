@@ -23,6 +23,14 @@ This repository hosts scripts written in bash script and python to automate comm
   </div>
 <br>
 
+## Table of Content
+- [Tech](#tech)
+- [Installation](#installation)
+- [How to use](#how-to-use)
+- [Development](#develop)
+- [License](#license)
+
+<a name="tech"></a>
 ## Tech 🖥️
 [![My Skills](https://skillicons.dev/icons?i=py,bash,git,github&perline=4)](https://skillicons.dev)
 
@@ -94,7 +102,7 @@ create_repo . test-repo
 ```
 The result is a local respository is created with a connected remote repository automatically!
 
-
+<a name="develop"></a>
 ## 👨‍💻 Development
 
 - Steps to join the project channel on  <a href="https://discord.com/channels/1099745007172329592/1099745007675646042"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b5061df29d55a92d945_full_logo_blurple_RGB.svg" width="10%"></a>
