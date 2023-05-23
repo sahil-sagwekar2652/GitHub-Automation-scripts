@@ -9,6 +9,12 @@ This repository hosts scripts written in bash script and python to automate comm
 ## Tech 🖥️
 [![My Skills](https://skillicons.dev/icons?i=py,bash,git,github&perline=4)](https://skillicons.dev)
 
+## Getting Started
+
+To install and configure the project on your system locally, use the command mentioned below:
+
+```curl https://raw.githubusercontent.com/sahil-sagwekar2652/GitHub-Automation-scripts/main/.setup/install.sh | bash```
+
 ## Installation
 ##### Requirements:
 - [Git Bash](https://git-scm.com/downloads) installed on your computer.
