@@ -22,15 +22,15 @@ If you want to ask a question, join the 'GitHub Automation scripts' project chan
 
 Before you ask a question, it is best to search for existing [Issues](https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts.git/issues) that might help you. It is also advisable to search the internet for answers first.
 
-If you then still feel the need to ask a question and need clarification, we recommend the following:
+If you still feel the need to ask a question and need clarification, we recommend the following:
 
 - Provide as much context as you can about what you're running into.
-- Provide details about the your OS and environment.
+- Provide details about your OS and environment.
 
 
 ## How To Contribute
 
-- Fork the project on GitHub, clone it on your PC.
+- Fork the project on GitHub,and clone it on your PC.
 - If you have an idea for an enhancement or a bug you can first check the [Issues](https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts.git/issues) to see if your question has been asked before.
 - If you'd like to work on an issue, please ask the creator of the issue to assign it to you. This helps to keep the workflow streamlined.
 - Create a new branch for your contribution and make the changes you want to make. (Always check for updates on the main branch before creating a pull request to avoid merge conflicts.)
