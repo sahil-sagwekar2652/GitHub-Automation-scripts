@@ -42,3 +42,6 @@ if response.status_code == 201:
 else:
     # Issue creation failed
     print("Failed to create issue.")
+    
+print("Thank You")
+# Updated
