@@ -46,5 +46,5 @@ else:
     print("Failed to create issue.")
 
 print("Thank You")
-
-#Issue Created
+print()
+# Issue Created
