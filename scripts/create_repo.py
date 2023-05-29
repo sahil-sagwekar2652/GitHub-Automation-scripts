@@ -1,9 +1,7 @@
-#!/usr/bin/env python
-
 import argparse
 import os
-import http.client
-import json
+import subprocess
+import requests
 from github_secrets import GITHUB_API_TOKEN, USERNAME
 
 if not GITHUB_API_TOKEN:
@@ -29,30 +27,29 @@ path = args.path
 os.chdir(path)
 os.mkdir(name)
 os.chdir(name)
-os.system('git init -b main')
-os.system('touch README.md')
-os.system('git add . && git commit -m "initial commit"')
-# os.system('git status')
+subprocess.run(['git', 'init', '-b', 'main'])
+subprocess.run(['touch', 'README.md'])
+subprocess.run(['git', 'add', '.'])
+subprocess.run(['git', 'commit', '-m', 'initial commit'])
 
-conn = http.client.HTTPSConnection("api.github.com")
-payload = json.dumps({
+payload = {
     "name": name,
     "description": "made with the GitHub API"
-})
+}
+
 headers = {
     'Authorization': f'Bearer {GITHUB_API_TOKEN}',
     'Content-Type': 'application/json',
     'User-Agent': f'{USERNAME}'
 }
 
-conn.request("POST", "/user/repos", payload, headers)
-res = conn.getresponse()
-data = res.read().decode("utf-8")
-response = json.loads(data)
+response = requests.post(URL, json=payload, headers=headers)
 
-print(response)
-remote_url = response['svn_url']
-
-os.system(f'git remote add origin {remote_url}')
-os.system('git push origin main')
-print(f"\nREMOTE URL FOR \"{name}\" is: {remote_url}")
+if response.status_code == 201:
+    remote_url = response.json()['svn_url']
+    subprocess.run(['git', 'remote', 'add', 'origin', remote_url])
+    subprocess.run(['git', 'push', 'origin', 'main'])
+    print(f"\nREMOTE URL FOR \"{name}\" is: {remote_url}")
+else:
+    print(f"Failed to create repository. Status Code: {response.status_code}")
+    print(f"Reason: {response.text}")
