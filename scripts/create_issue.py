@@ -2,6 +2,7 @@
 
 import argparse
 import requests
+import json
 
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description='Create a GitHub issue')
