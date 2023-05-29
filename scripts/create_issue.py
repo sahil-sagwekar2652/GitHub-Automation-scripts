@@ -38,14 +38,23 @@ data = {
 response = requests.post(url, headers=headers, json=data)
 
 # Check the response status code
-if response.status_code == 201:
+if response.ok:
     # Issue created successfully
-    print("Issue created successfully.")
+    issue_data = response.json()
+    issue_number = issue_data.get('number')
+    issue_url = issue_data.get('html_url')
+    print("Issue created successfully!")
+    print(f"Issue number: {issue_number}")
+    print(f"Issue URL: {issue_url}")
 else:
     # Issue creation failed
-    print("Failed to create issue.")
+    error_message = response.json().get('message', 'Unknown error')
+    error_status = response.status_code
+    error_response = json.dumps(response.json(), indent=4)
+    print(f"Failed to create issue. Error status: {error_status}")
+    print(f"Error message: {error_message}")
+    print("Error response:")
+    print(error_response)
 
-print("Thank You")
-
+print("Thank you!")
 # Issue Created
-print()
