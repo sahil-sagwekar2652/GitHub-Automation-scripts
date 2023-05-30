@@ -1,2 +1,1 @@
-#!/bin/bash
-python create_repo.py "$@"
+python create_repo.py <path> <name> [-d DESCRIPTION]

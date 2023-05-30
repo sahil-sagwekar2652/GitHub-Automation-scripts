@@ -11,8 +11,7 @@ if not GITHUB_API_TOKEN:
 
 URL = "https://api.github.com/user/repos"
 
-parser = argparse.ArgumentParser(description='creates a local repository linked with a remote repository')  # noqa: E501
-
+parser = argparse.ArgumentParser(description='creates a local repository linked with a remote repository')
 parser.add_argument('path',
                     metavar='PATH',
                     type=str,
@@ -21,7 +20,13 @@ parser.add_argument('name',
                     metavar='NAME',
                     type=str,
                     help='Enter a name for the new repository')
+parser.add_argument('-d',
+                    '--description',
+                    metavar='DESCRIPTION',
+                    type=str,
+                    help='Enter a description for the new repository')
 args = parser.parse_args()
+
 
 name = args.name
 path = args.path
@@ -36,13 +41,14 @@ os.system('git add . && git commit -m "initial commit"')
 
 conn = http.client.HTTPSConnection("api.github.com")
 payload = json.dumps({
-    "name": name,
-    "description": "made with the GitHub API"
+  "name": name,
+  "description": args.description  # Modify the value here
 })
+
 headers = {
-    'Authorization': f'Bearer {GITHUB_API_TOKEN}',
-    'Content-Type': 'application/json',
-    'User-Agent': f'{USERNAME}'
+  'Authorization': f'Bearer {GITHUB_API_TOKEN}',
+  'Content-Type': 'application/json',
+  'User-Agent': f'{USERNAME}'
 }
 
 conn.request("POST", "/user/repos", payload, headers)
