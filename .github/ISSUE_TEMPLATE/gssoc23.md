@@ -1,9 +1,9 @@
 ---
 name: gssoc23
 about: Issue template for GSSoC'23 contributors
-title: ''
+title: 'Github Automation Scripts'
 labels: gssoc23
-assignees: ''
+assignees: 'Ayesha Khan'
 
 ---
 

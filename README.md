@@ -70,7 +70,7 @@ USERNAME = "Your GitHub username"
 Run the following command in the project's base directory to add the scripts path to the PATH environment variable.
 
 ```sh
-$ export PATH=$PATH":"$(pwd)"/scripts"
+$ set PATH=$PATH":"$(pwd)"/scripts"
 ```
 
 To permanently add the scripts path to the PATH variable, run the below command in the project's root directory. (This file is located in your home directory)  
@@ -85,7 +85,7 @@ $ echo 'export PATH=$PATH''":'"$(pwd)"'/scripts''"' >> ~/.bash_profile
 
 #### Run the following commands in the project folder to add the scripts to your bin directory
 ```sh
-$ cp -r /scripts/* /usr/bin/
+$ copy -r /scripts/* /usr/bin/
 ```
 
 ## How to use
