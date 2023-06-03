@@ -1,0 +1,32 @@
+name: Auto Comment
+
+on:
+  issues:
+    types: [opened, closed, assigned, unassigned]
+  pull_request:
+    types: [opened]
+
+jobs:
+  auto-comment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Auto Comment
+        uses: wow-actions/auto-comment@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          issue-body: |
+            Thank you, @${{ github.event.sender.login }}, for opening this issue! Could you please provide additional context or details about the problem you're facing?
+          pr-body: |
+            Hi, @${{ github.event.sender.login }}! We appreciate your pull request. Before we proceed, please make sure to review and follow our contributing guidelines.
+          closed-issue-body: |
+            Thank you, @${{ github.event.sender.login }}, for your contribution! We appreciate your effort. If you have any further questions or would like to contribute more, feel free to reach out.
+          assigned-issue-body: |
+            Hi, @${{ github.event.issue.assignee.login }}! This issue has been assigned to you. We look forward to your work on it.
+          unassigned-issue-body: |
+            Hi, @${{ github.event.issue.assignee.login }}! This issue has been unassigned from you. If you're unavailable, please let us know, and we can reassign it to someone else.
+
