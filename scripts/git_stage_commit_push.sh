@@ -9,8 +9,8 @@ git clone $repo_url temp_repo
 # Change to the repository directory
 cd temp_repo
 
-# Prompt the user to enter the file names to be staged
-read -p "Enter the files to be staged (separated by space): " files
+# Prompt the user to enter the file path to be staged
+read -p "Enter the files path to be staged (separated by space): " files
 
 # Add the files to the staging area
 git add $files
