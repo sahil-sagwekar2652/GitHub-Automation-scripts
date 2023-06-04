@@ -12,8 +12,10 @@ cd temp_repo
 # Prompt the user to enter the file path to be staged
 read -p "Enter the files path to be staged (separated by space): " files
 
+# Move all the files to the temp_repo folder 
+mv -f $files .
 # Add the files to the staging area
-git add $files
+git add .
 
 # Prompt the user to enter the commit message
 read -p "Enter the commit message: " commit_message
