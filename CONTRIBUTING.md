@@ -22,10 +22,10 @@ If you want to ask a question, join the 'GitHub Automation scripts' project chan
 
 Before you ask a question, it is best to search for existing [Issues](https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts.git/issues) that might help you. It is also advisable to search the internet for answers first.
 
-If you then still feel the need to ask a question and need clarification, we recommend the following:
+If you still feel the need to ask a question and need clarification, we recommend the following:
 
 - Provide as much context as you can about what you're running into.
-- Provide details about the your OS and environment.
+- Provide details about your OS and environment.
 
 
 ## How To Contribute
