@@ -15,6 +15,10 @@ def parseArgs():
                     metavar='URL',
                     type=str,
                     help='Enter the newly created remote repository url (.git)')
+    parser.add_argument('description',
+                    metavar='DESCRIPTION',
+                    type=str,
+                    help='Enter the description for remote repository')    
     args = parser.parse_args()
     return args 
 
