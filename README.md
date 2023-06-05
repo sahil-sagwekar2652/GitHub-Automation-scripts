@@ -1,7 +1,7 @@
 # GitHub Automation Scripts 🤖
 ![](https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts/workflows/Flake8Linter/badge.svg)
 
-This repository hosts scripts written in bash script and python to automate common Git/GitHub workflows. Normally to connect a local repository to GitHub one has to go to the GitHub website, create a new respository and then add the new GitHub repo as a remote for your local repository. The [create_repo](scripts/create_repo) script automates this process.
+This repository hosts scripts written in bash and python to automate common Git/GitHub workflows. Normally to connect a local repository to GitHub one has to go to the GitHub website, create a new respository and then add the new GitHub repo as a remote for your local repository. The [create_repo](scripts/create_repo) script automates this process.
 
 [![GitHub-Automation-scripts](https://github-readme-stats.vercel.app/api/pin/?username=sahil-sagwekar2652&repo=GitHub-Automation-scripts&theme=dark)](https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts)<br/>
 
@@ -34,6 +34,9 @@ This repository hosts scripts written in bash script and python to automate comm
 ## Tech 🖥️
 [![My Skills](https://skillicons.dev/icons?i=py,bash,git,github&perline=4)](https://skillicons.dev)
 
+
+## 🏗️ Installation
+
 ## Getting Started
 
 To install and configure the project on your system locally, use the command mentioned below:
@@ -41,6 +44,7 @@ To install and configure the project on your system locally, use the command men
 ```curl https://raw.githubusercontent.com/sahil-sagwekar2652/GitHub-Automation-scripts/main/.setup/install.sh | bash```
 
 ## Installation
+
 ##### Requirements:
 - [Git Bash](https://git-scm.com/downloads) installed on your computer.
 - **GitHub personal access token**. (Go to your GitHub profile -> Settings -> Developer settings -> Personal Access Tokens -> Create new token with all the repository permissions)
@@ -114,12 +118,18 @@ The result is a local respository is created with a connected remote repository 
 - Checkout the issues tab to find ideas!
 
 - Want to contribute? Great!  
-Make sure to go through the [Contributor's Guide](CONTRIBUTING.md). Trust me it wont take long ;)
+Make sure to go through the [Contributor's Guide](CONTRIBUTING.md). Trust me it wont take long ;). 
 
 
-## License
+## 🪪 License
 
-[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](LICENSE)
+
+
+This project is licensed under the MIT license. For more information, please refer to the LICENSE file.
+
+We hope you find these automation scripts helpful in streamlining your Git and GitHub workflows
+
 
 
 ## Contributors
@@ -128,3 +138,4 @@ Make sure to go through the [Contributor's Guide](CONTRIBUTING.md). Trust me it 
    <a href="https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=sahil-sagwekar2652/GitHub-Automation-scripts" />
 </a></p>
+
