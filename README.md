@@ -23,6 +23,40 @@ This repository hosts scripts written in bash and python to automate common Git/
   </div>
 <br>
 
+# My Awesome Project
+
+Welcome to My Awesome Project! This project aims to improve collaboration and communication among contributors.
+
+## Auto-Comment Feature
+
+The auto-comment feature has been implemented to enhance collaboration and streamline communication within the project. It automatically generates comments in response to specific events, providing acknowledgements, instructions, and reminders. Here's how the auto-comment feature works:
+
+- When an issue is opened, an auto-comment is posted to greet the author and request additional context.
+- When a pull request is opened, an auto-comment expresses gratitude and reminds the author to follow the project's contributing guidelines.
+- When an issue is closed, an auto-comment thanks the author for their contribution and encourages further engagement.
+- When an issue is assigned, an auto-comment notifies the assignee and encourages them to start working on it.
+- When an issue is unassigned, an auto-comment notifies the assignee about the change and suggests reassignment if they are offline.
+
+These auto-comments aim to improve communication, provide clear instructions, and reduce manual effort by automating comment generation.
+
+## Getting Started
+
+To get started with My Awesome Project, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your-username/my-awesome-project.git`
+2. Install the dependencies: `npm install`
+3. Run the project: `npm start`
+
+Feel free to explore the code, contribute, and engage with the community!
+
+## New Features
+
+- Auto-comment feature implemented: This feature automatically generates comments in response to specific events, improving collaboration and communication within the project.
+
+We hope you find the auto-comment feature helpful and enjoy contributing to My Awesome Project. If you have any questions or need assistance, don't hesitate to reach out to us.
+
+Happy coding!
+
 ## Table of Content
 - [Tech](#tech)
 - [Installation](#installation)
