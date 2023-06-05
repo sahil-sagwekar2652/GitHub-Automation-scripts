@@ -121,9 +121,9 @@ The result is a local respository is created with a connected remote repository 
 Make sure to go through the [Contributor's Guide](CONTRIBUTING.md). Trust me it wont take long ;). 
 
 
-## 🪪 Licence
+## 🪪 License
 
-[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](LICENSE)
 
 
 This project is licensed under the MIT license. For more information, please refer to the LICENSE file.
