@@ -21,3 +21,5 @@ assignees: ''
 
 **Labels:**
 [Add appropriate labels to categorize the issue, such as bug, enhancement, documentation, etc.]
+
+**Description should be clear and concise**
