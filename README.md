@@ -91,7 +91,7 @@ create_secrets
 ```
 **! tested only on Arch Linux BTW**
 <p style="text-align:center;font-size:1.75rem">OR</p>
-**Manually add**
+Manually add
 
 ```py
 GITHUB_API_TOKEN = "Your GitHub personal access token"
