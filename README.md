@@ -55,15 +55,8 @@ To install and configure the project on your system locally, use the command men
 - ### Step 1:
 Fork and clone the repository locally.
 
+
 - ### Step 2:
-Create a ```github_secrets.py``` file in the ./scripts folder and define the following variables inside it.
-
-```py
-GITHUB_API_TOKEN = "Your GitHub personal access token"
-USERNAME = "Your GitHub username"
-```
-
-- ### Step 3:
 
 #### Add the project path to the PATH variable (Recommended)
 
@@ -86,6 +79,22 @@ $ echo 'export PATH=$PATH''":'"$(pwd)"'/scripts''"' >> ~/.bash_profile
 #### Run the following commands in the project folder to add the scripts to your bin directory
 ```sh
 $ cp -r /scripts/* /usr/bin/
+```
+
+- ### Step 3:
+
+Create a ```github_secrets.py``` file in the ./scripts folder and define the following variables inside it.
+
+```sh
+create_secrets
+```
+
+<p style="text-align:center;font-size:1.75rem">OR</p>
+Manually add
+
+```py
+GITHUB_API_TOKEN = "Your GitHub personal access token"
+USERNAME = "Your GitHub username"
 ```
 
 ## How to use
