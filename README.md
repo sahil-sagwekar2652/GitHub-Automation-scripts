@@ -32,7 +32,7 @@ This repository hosts scripts written in bash and python to automate common Git/
 
 <a name="tech"></a>
 ## Tech 🖥️
-[![My Skills](https://skillicons.dev/icons?i=py,bash,git,github&perline=4)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=py,go,bash,git,github&perline=5)](https://skillicons.dev)
 
 
 ## 🏗️ Installation
@@ -47,6 +47,7 @@ To install and configure the project on your system locally, use the command men
 
 ##### Requirements:
 - [Git Bash](https://git-scm.com/downloads) installed on your computer.
+- [Go](https://github.com/golang/go) and [gum](https://github.com/charmbracelet/gum#installation) 
 - **GitHub personal access token**. (Go to your GitHub profile -> Settings -> Developer settings -> Personal Access Tokens -> Create new token with all the repository permissions)
 
 
@@ -83,14 +84,14 @@ $ cp -r /scripts/* /usr/bin/
 
 - ### Step 3:
 
-Create a ```github_secrets.py``` file in the ./scripts folder and define the variables using.
+**Create a ```github_secrets.py``` file in the ./scripts folder and define the variables using.**
 
 ```sh
 create_secrets
 ```
-
+**! tested only on Arch Linux BTW**
 <p style="text-align:center;font-size:1.75rem">OR</p>
-Manually add
+**Manually add**
 
 ```py
 GITHUB_API_TOKEN = "Your GitHub personal access token"
