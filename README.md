@@ -83,7 +83,7 @@ $ cp -r /scripts/* /usr/bin/
 
 - ### Step 3:
 
-Create a ```github_secrets.py``` file in the ./scripts folder and define the following variables inside it.
+Create a ```github_secrets.py``` file in the ./scripts folder and define the variables using.
 
 ```sh
 create_secrets
