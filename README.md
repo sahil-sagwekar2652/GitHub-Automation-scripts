@@ -90,12 +90,14 @@ $ cp -r /scripts/* /usr/bin/
 create_secrets
 ```
 
-#### create_secrets.
+#### create_secrets. (Execute this in the scripts directory only)
 
 ![](https://github.com/Squashedapricot/GitHub-Automation-scripts/blob/main/gum_gifs/create_key.gif)
 
 #### to update secrets use the same command.
 ![](https://github.com/Squashedapricot/GitHub-Automation-scripts/blob/main/gum_gifs/update_key.gif)
+
+**(I Used "./" as I didn't add the scripts to my shell's environment variable)**
 
 **! tested only on Arch Linux BTW**
 <p style="text-align:center;font-size:1.75rem">OR</p>
