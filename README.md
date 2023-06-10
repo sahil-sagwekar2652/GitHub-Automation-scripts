@@ -89,7 +89,14 @@ $ cp -r /scripts/* /usr/bin/
 ```sh
 create_secrets
 ```
+
+#### create_secrets.
+
 ![](https://github.com/Squashedapricot/GitHub-Automation-scripts/blob/main/gum_gifs/create_key.gif)
+
+#### to update secrets use the same command.
+![](https://github.com/Squashedapricot/GitHub-Automation-scripts/blob/main/gum_gifs/update_key.gif)
+
 **! tested only on Arch Linux BTW**
 <p style="text-align:center;font-size:1.75rem">OR</p>
 Manually add
