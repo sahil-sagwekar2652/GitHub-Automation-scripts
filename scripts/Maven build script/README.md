@@ -1,4 +1,3 @@
-Sure! Here's an example of an elaborate README section for the given script:
 
 ---
 
