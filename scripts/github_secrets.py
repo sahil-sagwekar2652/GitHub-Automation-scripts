@@ -18,4 +18,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-//this is in the reference to the code given in index.html where we see the github_secrets.py code is entirely missing. Its entirely missing from scripts folder too//
+# this is in the reference to the code given in index.html where we see the github_secrets.py code is entirely missing. Its entirely missing from scripts folder too.
