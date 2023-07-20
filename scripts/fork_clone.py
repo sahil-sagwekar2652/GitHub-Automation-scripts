@@ -11,15 +11,15 @@ parser = argparse.ArgumentParser(description='Fork a repo')
 parser.add_argument('owner', type=str, help='Repository owner')
 parser.add_argument('repo', type=str, help='Repository name')
 # parser.add_argument('token', type=str, help='GitHub API token')
-parser.add_argument('name',type=str,help='Enter name for forked repo')
+parser.add_argument('name',type=str, help='Enter name for forked repo')
 args = parser.parse_args()
 
 # Get the command-line arguments
 owner = args.owner
 repo = args.repo
 # token = args.token
-token=GITHUB_API_TOKEN
-name=args.name
+token = GITHUB_API_TOKEN
+name = args.name
 
 # Set the GitHub API endpoint for forking a repo
 url = f"https://api.github.com/repos/{owner}/{repo}/forks"
@@ -32,7 +32,7 @@ headers = {
 
 # Set the fork repo name
 data = {
-    "name":name
+    "name" : name
 }
 
 # Send a POST request to fork
@@ -54,7 +54,7 @@ else:
     print("Error response:")
     print(error_response)
 
-#Code to Clone
+# Code to Clone
 try:
     cmd = "git clone {}".format(fork_data.get('clone_url'))
     print("Starting to clone {}".format(fork_data.get('clone_url')))
@@ -64,6 +64,6 @@ try:
     print("#####################################")
     print("")
     print("Thank you!")
-except:
+except NameError:
     print("Error cloning")
 # Forked and cloned successfully
