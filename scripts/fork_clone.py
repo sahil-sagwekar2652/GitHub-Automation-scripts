@@ -11,7 +11,7 @@ parser = argparse.ArgumentParser(description='Fork a repo')
 parser.add_argument('owner', type=str, help='Repository owner')
 parser.add_argument('repo', type=str, help='Repository name')
 # parser.add_argument('token', type=str, help='GitHub API token')
-parser.add_argument('name',type=str, help='Enter name for forked repo')
+parser.add_argument('name', type=str, help='Enter name for forked repo')
 args = parser.parse_args()
 
 # Get the command-line arguments
