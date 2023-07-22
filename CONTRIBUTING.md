@@ -1,84 +1,77 @@
-### 🧑‍💻 Contribution Guidelines   
+# Contributing to GitHub-Automation-Scripts
+Ah, thank you ever so much for gracing us with your oh-so-valuable contributions! We're just thrilled to have you here. 
+But wait, hold on! Don't just dive in and contribute your precious time. First, read the  [Table of Contents](#table-of-contents) for different ways to help and details about how this project handles them. It will make it a lot easier for us maintainers and smooth out the experience for all involved. The community looks forward to your contributions. 🎉
+
+> And if you like the project, but just don't have time to contribute, that's fine. There are other easy ways to support the project and show your appreciation, which we would also be very happy about:
+> - Star the project
+> - Tweet about it
+Remember, every bit of support, big or small, makes a significant difference, and we truly appreciate every gesture of encouragement you offer. Your appreciation fuels our passion for the project, and we're immensely grateful for your involvement in any form! ❤️🌟🐦
+
+## Table of Contents
+
+- [Asking Questions](#asking-questions)
+- [How To Contribute](#how-to-contribute)
+- [Styleguides](#styleguides)
 
 
-## Introduction  
-Welcome to the GitHub Automation Script project! Here, you will find everything you need to know about automating your GitHub workflows and supercharging your development process.
-GitHub is a powerful platform for collaboration and version control, enabling teams and individuals to work together seamlessly on projects of all sizes. However, managing repetitive tasks, ensuring code quality, and streamlining deployment can be time-consuming and error-prone.
+## Asking Questions
 
-That's where the GitHub Automation Script comes in.  
+If you want to ask a question, join the 'GitHub Automation scripts' project channel on the GSSoC discord server. To join the project channel, make sure you have the 'GitHub Automation scripts' & 'Contributor' role assigned to you. If you don't have the role assigned to you, you can self-assign it in the [#self-roles](https://discord.com/channels/1099745007172329592/1099745007675646046) channel.
 
-## Getting Started 
-We deeply value your enthusiasm for enhancing this project!  We warmly welcome your valuable contributions and invite you to participate in elevating it to new heights.  
+Before you ask a question, it is best to search for existing [Issues](https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts.git/issues) that might help you. It is also advisable to search the internet for answers first.
 
-There are some steps that you need to follow before making any contribution in this project, the following steps are important to get start. 
+If you still feel the need to ask a question and need clarification, we recommend the following:
 
-### Step 1. Fork the Repository
- [Fork](https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts) the repo first 
+- Provide as much context as you can about what you're running into.
+- Provide details about your OS and environment.
 
- ### Step 2. Clone the forked Repository 
-    ``` 
-    git clone https://github.com/<your_GitHub_username>/GitHub-Automation-scripts.git
-     ```  
-### Step 3. Set Up Remotes 
-- Add a reference (remote) to the original repository:
-    ```
-     git remote add upstream https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts.git 
-       ``` 
-    - Add a reference (remote) to your forked repository:
-``` 
-git remote add origin  https://github.com/<your_GitHub_username>/GitHub-Automation-scripts.git
-``` 
 
-### Step 4. Check Remotes
+## How To Contribute
+
+To start contributing, follow the guidelines given below:
+
+### 1. Fork the Repository
+Fork the repository (https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts) 
+
+### 2. Clone the forked Repository
 ```
-git remote -v
+git clone https://github.com/<your_user_name>/GitHub-Automation-scripts.git
 ```
+***NOTE***
+- If you have an idea for an enhancement or a bug you can first check the [Issues](https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts.git/issues) to see if your question has been asked before.
 
-### Step 5. Keep Your Local Copy Updated
-```
-git pull upstream main
-``` 
-### Step 6. Create a New Branch
+- If you'd like to work on an issue, please ask the creator of the issue to assign it to you. This helps to keep the workflow streamlined.
+
+### 3. Create a New Branch
 ```
 git checkout -b <your_branch_name>
 ```
-
 ## Making Changes
-Perform your desired changes to the code base. 
+Perform your desired changes to the code base.
 
-### Step 7. Track Changes
-    ```
-     # Track the changes
-     git status
+### 4. Track Changes
+```
+git add .
+```
 
-     # Add changes to Index
-     git add . or git add <file_name>
-     ```
-### Step 8. Commit Changes
-    ```
-    git commit -m "Write a meaningful but small commit message" 
-    ```
-  ### Step 9. Push Changes
+### 5. Commit Changes
+```
+git commit -m "Suitable message"
+```
+
+### 6. Push Changes
 ```
 git push -u origin <your_branch_name>
 ```
-### 10. Compare and Create
-- Click on "Compare And Pull Requests" 🔄
-- Make sure your pull request adheres to our contribution guidelines. Pull requests that do not meet the guidelines may be closed or discarded ❌
+
+## Creating a Pull Request
+To create a pull request:
+
+- The pull request should mention the issue it is trying to solve and should be linked to it. Here is a video on how to link PRs to issues - [video link](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
+
+- Make sure to make the appropriate changes in the README.md file if you are adding a new script or feature.
 - Add an appropriate title and description to your pull request, explaining your changes with suitable explanations and screenshots 📝🖼️
-- Click on "Create Pull Request" to submit your contribution for review ✅ 
+- Click on "Create Pull Request" to submit your contribution for review ✅
 
-We appreciate your understanding and cooperation in following our guidelines. Thank you for your contribution! 🙌 
-Follow the existing code style and formatting conventions.
-
-Maintain consistency with the overall project structure and organization.
-
-Write clear and concise code with appropriate comments where necessary.
-
-Ensure your code is free from errors and runs without issues. 
-
-Congratulations! You've made your PR with the desired changes. Once the PR is reviewed, it will be merged into the original codebase for everyone to see and use. 
-
-## Thank You! 
-Thank you so much for considering contributing to GitHub-Automation-scripts project.  We appreciate your valuable input, and we hope to see you again soon. 😊 
-For any further questions or assistance, please reach out to the project maintainers or refer to the project's documentation. git
+## Styleguides
+This project uses the Flake8 linter to lint the Python code. If you are using VSCode, I would suggest installing the [Flake8 linter extension](https://marketplace.visualstudio.com/items?itemName=ms-python.flake8) for VSCode.
