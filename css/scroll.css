@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#scroll {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 55px;
+    width: 55px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#scroll:hover {
+    box-shadow: 0 0 150px 10px #0366d6;
+}
+
+#scroll-bar {
+    display: block;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    background-color: #c3ddfa;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    color: #001a2e;
+}
+
+.pulse {
+    margin: 0 auto;
+    border-radius: 100px;
+    position: absolute;
+    left: -5.2px;
+    top: -5.2px;
+    z-index: 0;
+    background-color: transparent;
+    opacity: 0;
+    width: 66px;
+    height: 66px;
+    border: 6px solid #0366d6;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    -ms-border-radius: 100px;
+    border-radius: 100px;
+    -webkit-animation: pulse 1s linear infinite 0.3s;
+    -moz-animation: pulse 1s linear infinite 0.3s;
+    border-image: initial;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0;
+    }
+
+    8% {
+        -webkit-transform: scale(0);
+        opacity: 0;
+    }
+
+    15% {
+        -webkit-transform: scale(0.1);
+        opacity: 1;
+    }
+
+    30% {
+        -webkit-transform: scale(0.5);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0;
+    }
+
+    8% {
+        -webkit-transform: scale(0);
+        opacity: 0;
+    }
+
+    15% {
+        -webkit-transform: scale(0.1);
+        opacity: 1;
+    }
+
+    30% {
+        -webkit-transform: scale(0.5);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+    }
+}
