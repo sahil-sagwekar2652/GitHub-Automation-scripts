@@ -1,0 +1,61 @@
+@import 'https://fonts.googleapis.com/css?family=Permanent+Marker';
+
+.contributors {
+    margin: 2rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contributors h1 {
+    font: 5.5vw/1 Permanent Marker;
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+    display: inline-block;
+    opacity: 0.7;
+}
+
+.contributors h1:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+#contributor {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contributor-card {
+    width: 65px;
+    height: 65px;
+    margin: 5px;
+    clip-path: polygon(50% 0%, 91% 25%, 91% 75%, 50% 100%, 9% 75%, 9% 25%);
+}
+
+.contributor-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.contributor-card img:hover {
+    width: 78px;
+    height: 78px;
+    opacity: 1;
+}
+
+.contributor-card img:not(:hover) {
+    opacity: 0.8;
+}
+
+.contributor-card:nth-child(4n+1),
+.contributor-card:nth-child(4n+3) {
+    margin-top: -1.6rem;
+}
