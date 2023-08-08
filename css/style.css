@@ -182,13 +182,112 @@ html {
 
 
 
-  /* Footer Style */
-  
-  footer {
-    margin-top: auto;
-  }
+/* Footer Style */
 
-  /* ENDS ------------->>>>>>>>> */
+footer {
+  margin-top: auto;
+  background-color: #000;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+  margin-top: 10px;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+  margin: 0 10px;
+}
+
+.socials a{
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  transition: all .3s ease;
+}
+
+.socials a i{
+  font-size: 1.1rem;
+  width: 40px;
+  transition: color .4s ease;
+}
+
+.socials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom{
+  background: #000;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.tweet:hover {
+  color: white;
+  background: rgb(0, 140, 255);
+}
+
+.mail:hover {
+  color: salmon;
+  background: white;
+}
+
+.git:hover {
+  color: black;
+  background: white;
+}
+
+.in:hover {
+  color: #04669A;
+  background: white;
+}
+
+.youtube:hover {
+  color: red;
+  background: white;
+}
+
+@media (max-width:500px) {
+  .footer-menu ul{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+/* ENDS ------------->>>>>>>>> */
 
 /* Scroll Button Style */
 
