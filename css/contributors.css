@@ -7,6 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .contributors h1 {
@@ -46,8 +47,8 @@
 }
 
 .contributor-card img:hover {
-    width: 78px;
-    height: 78px;
+    width: 75px;
+    height: 75px;
     opacity: 1;
 }
 

@@ -13,17 +13,20 @@
   </style>
 </head>
 <body class="bg-gray-100">
-  <header class="bg-gray-300 py-4">
-    <div class="container mx-auto px-4">
-      <h1 class="text-2xl font-semibold text-black">GitHub Automation Scripts 🤖</h1>
-      <div class="github-link mb-2">
-        <a class="fg-black" href="https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts" target="_blank" rel="noopener noreferrer">
-          <i class="fg-black fab fa-github"></i>
-          GitHub
-        </a>
-      </div>
-    </div>
-  </header>
+  <nav class="navbar">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo"><a href="https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts">GitHub Automation Scripts 🤖</a></label>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contribute">Contribute</a></li>
+      <li><a href="#install">Installation</a></li>
+      <li><a href="#contributor">Contributors</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <section class="h-screen bg-blue-900 flex items-center justify-center">
     <div class="Viewcontainer mx-auto flex flex-wrap flex-col md:flex-row space-x-0 md:space-x-8">
@@ -47,7 +50,7 @@
     </div>
   </section>
 
-  <div class="desc-container mx-auto px-4">
+  <div class="desc-container mx-auto px-4" id="about">
     <div class="description-section">
       <div class="image-container">
         <img src="graphics/repo.jpg" alt="gitrepo-Floating-Image">
@@ -64,7 +67,7 @@
   </div>
 
 
-  <div class="container mx-auto px-4 py-8">
+  <div class="container mx-auto px-4 py-8" id="contribute">
     <div class="contribute-guide">
       <h1 class="text-2xl font-semibold">Contributing to GitHub-Automation-Scripts</h1>
       <p class="mt-4">First off, thanks for taking the time to contribute! ❤️</p>
@@ -110,7 +113,7 @@
 </body>
 </html>
 
-  <main class="container mx-auto px-4 py-8">
+  <main class="container mx-auto px-4 py-8" id="install">
     <nav class="mb-8 flex justify-center items-center">
       <div class="inline-flex border border-gray-300 rounded">
         <button class="py-2 px-4 bg-gray-200 font-semibold focus:outline-none active:bg-gray-300" onclick="openTab(event, 'installation')">Installation</button>
@@ -199,7 +202,7 @@ USERNAME = "Your GitHub username"</code></pre>
     <div id="contributor"></div>
   </div>
 
-  <footer class="py-4">
+  <footer class="py-4" id="contact">
     <div class="container mx-auto px-4 footer-content">
       <h3>GITHUB AUTOMATION SCRIPTS 🤖</h3>
       <p>Bash and Python scripts to automate your Git & GitHub workflow. Made by using only standard python libraries.</p>
