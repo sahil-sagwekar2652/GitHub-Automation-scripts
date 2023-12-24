@@ -9,6 +9,17 @@ HEAD_BRANCH="head_branch"  # The branch you want to merge from
 PR_TITLE="Pull Request Title"
 PR_BODY="Pull Request Body"
 
+install_tool() {
+  tool_name=$1
+
+  # Install the specified tool if not already installed
+  if ! command -v $tool_name &> /dev/null; then
+      echo "$tool_name command-line tool is not installed. Installing..."
+      sudo apt-get update
+      sudo apt-get install $tool_name -y
+  fi
+}
+
 # Method 1: Using GitHub API with cURL
 create_pull_request_with_curl() {
   # Create a pull request using GitHub API
@@ -30,12 +41,7 @@ create_pull_request_with_curl() {
 
 # Method 2: Using hub command-line tool
 create_pull_request_with_hub() {
-  # Install hub if not already installed
-  if ! command -v hub &> /dev/null; then
-      echo "hub command-line tool is not installed. Installing..."
-      sudo apt-get update
-      sudo apt-get install hub -y
-  fi
+  install_tool "hub"
 
   # Create a pull request using hub
   hub pull-request -b "$REPO_OWNER:$BASE_BRANCH" -h "$REPO_OWNER:$HEAD_BRANCH" -m "$PR_TITLE" -m "$PR_BODY"
@@ -43,12 +49,7 @@ create_pull_request_with_hub() {
 
 # Method 3: Using gh command-line tool
 create_pull_request_with_gh() {
-  # Install gh if not already installed
-  if ! command -v gh &> /dev/null; then
-      echo "gh command-line tool is not installed. Installing..."
-      sudo apt-get update
-      sudo apt-get install gh -y
-  fi
+  install_tool "gh"
 
   # Create a pull request using gh
   gh pr create --base "$BASE_BRANCH" --head "$HEAD_BRANCH" --title "$PR_TITLE" --body "$PR_BODY"
